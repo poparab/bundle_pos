@@ -1,0 +1,1 @@
+# Bundle POS Payment Method Child DocType 

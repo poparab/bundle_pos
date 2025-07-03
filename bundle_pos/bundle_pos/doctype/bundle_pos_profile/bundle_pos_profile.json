@@ -1,0 +1,327 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:profile_name",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "profile_name",
+  "company",
+  "warehouse",
+  "cost_center",
+  "currency",
+  "column_break_5",
+  "pos_opening_entry_type",
+  "pos_closing_entry_type",
+  "require_customer_selection",
+  "allow_bundle_creation",
+  "section_break_10",
+  "customer_search_fields",
+  "default_customer",
+  "column_break_13",
+  "customer_groups",
+  "applicable_for_users",
+  "section_break_16",
+  "item_groups",
+  "column_break_18",
+  "bundle_categories",
+  "accounting_section",
+  "income_account",
+  "expense_account",
+  "column_break_22",
+  "write_off_account",
+  "write_off_cost_center",
+  "payment_methods_section",
+  "payments",
+  "section_break_26",
+  "print_format",
+  "letter_head",
+  "column_break_29",
+  "tc_name",
+  "select_print_heading",
+  "bundle_settings_section",
+  "auto_calculate_bundle_price",
+  "allow_bundle_discount",
+  "column_break_34",
+  "bundle_price_calculation_method",
+  "max_bundle_discount_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "profile_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Profile Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "POS Opening Entry",
+   "fieldname": "pos_opening_entry_type",
+   "fieldtype": "Data",
+   "label": "POS Opening Entry Type",
+   "read_only": 1
+  },
+  {
+   "default": "POS Closing Entry",
+   "fieldname": "pos_closing_entry_type",
+   "fieldtype": "Data",
+   "label": "POS Closing Entry Type",
+   "read_only": 1
+  },
+  {
+   "default": 1,
+   "fieldname": "require_customer_selection",
+   "fieldtype": "Check",
+   "label": "Require Customer Selection"
+  },
+  {
+   "default": 1,
+   "fieldname": "allow_bundle_creation",
+   "fieldtype": "Check",
+   "label": "Allow Bundle Creation"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Customer Settings"
+  },
+  {
+   "default": "customer_name,mobile_no,email_id",
+   "fieldname": "customer_search_fields",
+   "fieldtype": "Data",
+   "label": "Customer Search Fields"
+  },
+  {
+   "fieldname": "default_customer",
+   "fieldtype": "Link",
+   "label": "Default Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_groups",
+   "fieldtype": "Table",
+   "label": "Customer Groups",
+   "options": "Bundle POS Customer Group"
+  },
+  {
+   "fieldname": "applicable_for_users",
+   "fieldtype": "Table",
+   "label": "Applicable for Users",
+   "options": "Bundle POS User"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break",
+   "label": "Item Settings"
+  },
+  {
+   "fieldname": "item_groups",
+   "fieldtype": "Table",
+   "label": "Item Groups",
+   "options": "Bundle POS Item Group"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bundle_categories",
+   "fieldtype": "Table",
+   "label": "Bundle Categories",
+   "options": "Bundle POS Category"
+  },
+  {
+   "fieldname": "accounting_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting"
+  },
+  {
+   "fieldname": "income_account",
+   "fieldtype": "Link",
+   "label": "Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "expense_account",
+   "fieldtype": "Link",
+   "label": "Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "write_off_account",
+   "fieldtype": "Link",
+   "label": "Write Off Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "write_off_cost_center",
+   "fieldtype": "Link",
+   "label": "Write Off Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "payment_methods_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Methods"
+  },
+  {
+   "fieldname": "payments",
+   "fieldtype": "Table",
+   "label": "Payment Methods",
+   "options": "Bundle POS Payment Method"
+  },
+  {
+   "fieldname": "section_break_26",
+   "fieldtype": "Section Break",
+   "label": "Print Settings"
+  },
+  {
+   "fieldname": "print_format",
+   "fieldtype": "Link",
+   "label": "Print Format",
+   "options": "Print Format"
+  },
+  {
+   "fieldname": "letter_head",
+   "fieldtype": "Link",
+   "label": "Letter Head",
+   "options": "Letter Head"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tc_name",
+   "fieldtype": "Link",
+   "label": "Terms and Conditions",
+   "options": "Terms and Conditions"
+  },
+  {
+   "fieldname": "select_print_heading",
+   "fieldtype": "Link",
+   "label": "Print Heading",
+   "options": "Print Heading"
+  },
+  {
+   "fieldname": "bundle_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Bundle Settings"
+  },
+  {
+   "default": 1,
+   "fieldname": "auto_calculate_bundle_price",
+   "fieldtype": "Check",
+   "label": "Auto Calculate Bundle Price"
+  },
+  {
+   "default": 1,
+   "fieldname": "allow_bundle_discount",
+   "fieldtype": "Check",
+   "label": "Allow Bundle Discount"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Sum of Items",
+   "fieldname": "bundle_price_calculation_method",
+   "fieldtype": "Select",
+   "label": "Bundle Price Calculation Method",
+   "options": "Sum of Items\nFixed Price\nPercentage of Items"
+  },
+  {
+   "default": 10,
+   "fieldname": "max_bundle_discount_percentage",
+   "fieldtype": "Float",
+   "label": "Max Bundle Discount Percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Bundle POS",
+ "name": "Bundle POS Profile",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "POS Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "POS User"
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+} 
